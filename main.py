@@ -9,10 +9,15 @@ def ispalindrome(p):
     la phrase ou le mot et vérifiant si elle est identique
     """
     # votre code ici
-    x = "éêèêë"
-    y = "eeeee"
+    p1=""
+    for i in p:
+        if i!=" ":
+            p1+=i 
+    print(p1)
+    x = "éêèêëàô"
+    y = "eeeeeao"
     mytable = str.maketrans(x, y)
-    if p.translate(mytable)[::-1] == p.translate(mytable):
+    if p1.translate(mytable)[::-1] == p1.translate(mytable):
         return True
     return False
 
